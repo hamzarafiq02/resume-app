@@ -1,0 +1,15 @@
+{% load static %}
+<div class="border-right border-warning h-100">
+  <div class="text-center">
+    <img src="{% static 'core/images/hamzarafiq2.jpg' %}"
+    alt="profilepic" class="img-fluid rounded-circle mt-5"
+    width="100px" height="100px">
+    <h3 class="text-white mt-3 st-font">Sunny Khan</h3>
+  </div>
+  <nav class="nav flex-column text-center mr-3">
+    <a href="{% url 'home' %}" class="nav-link {{home}}">Home</a>
+    <a href="{% url 'services' %}" class="nav-link {{services}}">Services</a>
+    <a href="{% url 'skill' %}" class="nav-link {{skill}}">Skills</a>
+    <a href="{% url 'contact' %}" class="nav-link {{contact}}">Contact-us</a>
+  </nav>
+</div>
